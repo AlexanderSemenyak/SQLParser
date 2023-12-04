@@ -1,3 +1,4 @@
+origin: https://github.com/JaCraig/SQLParser
 ## SQLParser
 
 This C# library provides a SQL parser and lexer implementation using ANTLR. It allows you to parse SQL queries into an abstract syntax tree (AST) and perform various operations on the parsed queries.
