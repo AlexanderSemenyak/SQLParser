@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Code | SQLParser API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Code | SQLParser API Reference ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/AlexanderSemenyak/SQLParser/blob/master/docfx_project/articles/where.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon.png" alt="SQLParser">
+            SQLParser
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="code">Code</h1>
+
+<pre><code class="lang-csharp">using Antlr4.Runtime.Misc;
+using SQLParser.Parsers.TSql;
+
+namespace SQLParser.Example
+{
+    /// &lt;summary&gt;
+    /// This is an example of how to use the parser to parse out the where clause of a select statement.
+    /// &lt;/summary&gt;
+    public class WhereClauseExample
+    {
+        /// &lt;summary&gt;
+        /// Runs this instance.
+        /// &lt;/summary&gt;
+        public void Run()
+        {
+            // Create a printer to store the results of the parse
+            var ExamplePrinter = new Printer();
+
+            // Parse a statement and pass the printer to the parser
+            Parser.Parse(&quot;SELECT * FROM Somewhere WHERE MyColumn = @parameter1 AND MySecondColumn = @parameter2&quot;, ExamplePrinter, Enums.SQLType.TSql);
+
+            // ExamplePrinter.WhereClause is now the where clause of the statement
+            Console.WriteLine(ExamplePrinter.WhereClause);
+        }
+
+        /// &lt;summary&gt;
+        /// This is an example of a printer that can be used to parse a statement.
+        /// &lt;/summary&gt;
+        /// &lt;seealso cref=&quot;TSqlParserBaseListener&quot;/&gt;
+        internal class Printer : TSqlParserBaseListener
+        {
+            /// &lt;summary&gt;
+            /// The final where clause found in the statement.
+            /// &lt;/summary&gt;
+            public string? WhereClause { get; set; }
+
+            /// &lt;summary&gt;
+            /// The select statement is found in the query specification. For our purposes, we only
+            /// need to check if there is a where clause and if so, store it.
+            /// &lt;/summary&gt;
+            /// &lt;param name=&quot;context&quot;&gt;The query context object&lt;/param&gt;
+            public override void EnterQuery_specification([NotNull] TSqlParser.Query_specificationContext context)
+            {
+                if (context.where is null)
+                    return;
+                var StartIndex = context.where.Start.StartIndex;
+                var StopIndex = context.where.Stop.StopIndex;
+                var WhereClauseInterval = new Interval(StartIndex, StopIndex);
+                WhereClause = context.Start.InputStream.GetText(WhereClauseInterval);
+            }
+        }
+    }
+}
+</code></pre><h1 id="output">Output</h1>
+<pre><code>MyColumn = @parameter1 AND MySecondColumn = @parameter2
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/docfx_project/articles/where.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <strong><a href='https://github.com/JaCraig/SQLParser'>Open in Github</a></strong>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

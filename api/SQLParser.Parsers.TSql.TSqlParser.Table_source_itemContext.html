@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TSqlParser.Table_source_itemContext | SQLParser API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TSqlParser.Table_source_itemContext | SQLParser API Reference ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/AlexanderSemenyak/SQLParser/new/master/apiSpec/new?filename=SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext.md&amp;value=---%0Auid%3A%20SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon.png" alt="SQLParser">
+            SQLParser
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext">
+
+
+
+  <h1 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext" class="text-break">
+Class TSqlParser.Table_source_itemContext  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96555"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SQLParser.html">SQLParser</a>.<a class="xref" href="SQLParser.Parsers.html">Parsers</a>.<a class="xref" href="SQLParser.Parsers.TSql.html">TSql</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SQLParser.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TSqlParser.Table_source_itemContext : ParserRuleContext, IRuleNode, IParseTree, ISyntaxTree, ITree</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RuleContext</span></div>
+      <div><span class="xref">ParserRuleContext</span></div>
+      <div><span class="xref">TSqlParser.Table_source_itemContext</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IRuleNode</span></div>
+      <div><span class="xref">IParseTree</span></div>
+      <div><span class="xref">ISyntaxTree</span></div>
+      <div><span class="xref">ITree</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">ParserRuleContext.EMPTY</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.children</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.exception</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.CopyFrom(ParserRuleContext)</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.AddChild(ITerminalNode)</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.AddChild(RuleContext)</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.RemoveLastChild()</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.AddChild(IToken)</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.AddErrorNode(IToken)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ParserRuleContext.GetChild(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ParserRuleContext.GetChild&lt;T&gt;(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ParserRuleContext.GetToken(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ParserRuleContext.GetTokens(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ParserRuleContext.GetRuleContext&lt;T&gt;(int)</a>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.GetRuleContexts&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.ToInfoString(Parser)</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.EmptyContext</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.ChildCount</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.SourceInterval</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.Start</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.Stop</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.invokingState</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">RuleContext.GetChildContext(RuleContext, int)</a>
+    </div>
+    <div>
+      <span class="xref">RuleContext.Depth()</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.GetText()</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.getAltNumber()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">RuleContext.setAltNumber(int)</a>
+    </div>
+    <div>
+      <span class="xref">RuleContext.Accept&lt;T&gt;(IParseTreeVisitor&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.ToStringTree(Parser)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">RuleContext.ToStringTree(IList&lt;string&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">RuleContext.ToStringTree()</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.ToString(IRecognizer)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">RuleContext.ToString(IList&lt;string&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">RuleContext.ToString(IRecognizer, RuleContext)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">RuleContext.ToString(IList&lt;string&gt;, RuleContext)</a>
+    </div>
+    <div>
+      <span class="xref">RuleContext.IsEmpty</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.Parent</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.Payload</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext__ctor_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.#ctor*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext__ctor_Antlr4_Runtime_ParserRuleContext_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.#ctor(Antlr4.Runtime.ParserRuleContext,System.Int32)">
+  Table_source_itemContext(ParserRuleContext, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96598"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table_source_itemContext(ParserRuleContext parent, int invokingState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <span class="xref">ParserRuleContext</span></dt>
+    <dd></dd>
+    <dt><code>invokingState</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_loc_fcall" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.loc_fcall">
+  loc_fcall
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96558"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Function_callContext loc_fcall</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Function_callContext.html">Function_callContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_loc_id" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.loc_id">
+  loc_id
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96556"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IToken loc_id</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IToken</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_loc_id_call" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.loc_id_call">
+  loc_id_call
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96557"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IToken loc_id_call</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IToken</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_oldstyle_fcall" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.oldstyle_fcall">
+  oldstyle_fcall
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96559"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Function_callContext oldstyle_fcall</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Function_callContext.html">Function_callContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_RuleIndex_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.RuleIndex*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_RuleIndex" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.RuleIndex">
+  RuleIndex
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96602"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int RuleIndex { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_DOT_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.DOT*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_DOT" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.DOT">
+  DOT()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96590"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode DOT()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_DOUBLE_COLON_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.DOUBLE_COLON*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_DOUBLE_COLON" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.DOUBLE_COLON">
+  DOUBLE_COLON()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96597"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode DOUBLE_COLON()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_EnterRule_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.EnterRule*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_EnterRule_Antlr4_Runtime_Tree_IParseTreeListener_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.EnterRule(Antlr4.Runtime.Tree.IParseTreeListener)">
+  EnterRule(IParseTreeListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96603"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void EnterRule(IParseTreeListener listener)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listener</code> <span class="xref">IParseTreeListener</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_ExitRule_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.ExitRule*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_ExitRule_Antlr4_Runtime_Tree_IParseTreeListener_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.ExitRule(Antlr4.Runtime.Tree.IParseTreeListener)">
+  ExitRule(IParseTreeListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96608"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ExitRule(IParseTreeListener listener)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listener</code> <span class="xref">IParseTreeListener</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_LOCAL_ID_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.LOCAL_ID*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_LOCAL_ID" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.LOCAL_ID">
+  LOCAL_ID()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96586"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode LOCAL_ID()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_LR_BRACKET_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.LR_BRACKET*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_LR_BRACKET" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.LR_BRACKET">
+  LR_BRACKET()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96572"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode LR_BRACKET()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_RR_BRACKET_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.RR_BRACKET*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_RR_BRACKET" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.RR_BRACKET">
+  RR_BRACKET()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96576"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode RR_BRACKET()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_as_table_alias_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.as_table_alias*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_as_table_alias" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.as_table_alias">
+  as_table_alias()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96563"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.As_table_aliasContext as_table_alias()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.As_table_aliasContext.html">As_table_aliasContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_change_table_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.change_table*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_change_table" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.change_table">
+  change_table()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96580"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Change_tableContext change_table()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Change_tableContext.html">Change_tableContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_column_alias_list_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.column_alias_list*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_column_alias_list" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.column_alias_list">
+  column_alias_list()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96577"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Column_alias_listContext column_alias_list()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Column_alias_listContext.html">Column_alias_listContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_derived_table_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.derived_table*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_derived_table" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.derived_table">
+  derived_table()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96573"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Derived_tableContext derived_table()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Derived_tableContext.html">Derived_tableContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_full_table_name_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.full_table_name*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_full_table_name" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.full_table_name">
+  full_table_name()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96566"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Full_table_nameContext full_table_name()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Full_table_nameContext.html">Full_table_nameContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_function_call_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.function_call*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_function_call" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.function_call">
+  function_call()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96583"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Function_callContext function_call()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Function_callContext.html">Function_callContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_nodes_method_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.nodes_method*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_nodes_method" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.nodes_method">
+  nodes_method()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96587"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Nodes_methodContext nodes_method()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Nodes_methodContext.html">Nodes_methodContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_open_json_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.open_json*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_open_json" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.open_json">
+  open_json()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96594"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Open_jsonContext open_json()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Open_jsonContext.html">Open_jsonContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_open_xml_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.open_xml*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_open_xml" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.open_xml">
+  open_xml()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96591"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Open_xmlContext open_xml()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Open_xmlContext.html">Open_xmlContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_rowset_function_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.rowset_function*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_rowset_function" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.rowset_function">
+  rowset_function()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96569"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Rowset_functionContext rowset_function()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Rowset_functionContext.html">Rowset_functionContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_table_name_with_hint_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.table_name_with_hint*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Table_source_itemContext_table_name_with_hint" data-uid="SQLParser.Parsers.TSql.TSqlParser.Table_source_itemContext.table_name_with_hint">
+  table_name_with_hint()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96560"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Table_name_with_hintContext table_name_with_hint()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Table_name_with_hintContext.html">Table_name_with_hintContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L96555" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <strong><a href='https://github.com/JaCraig/SQLParser'>Open in Github</a></strong>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

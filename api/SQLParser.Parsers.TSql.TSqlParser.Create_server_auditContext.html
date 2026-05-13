@@ -1,0 +1,2916 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TSqlParser.Create_server_auditContext | SQLParser API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TSqlParser.Create_server_auditContext | SQLParser API Reference ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/AlexanderSemenyak/SQLParser/new/master/apiSpec/new?filename=SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext.md&amp;value=---%0Auid%3A%20SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon.png" alt="SQLParser">
+            SQLParser
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext">
+
+
+
+  <h1 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext" class="text-break">
+Class TSqlParser.Create_server_auditContext  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31621"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SQLParser.html">SQLParser</a>.<a class="xref" href="SQLParser.Parsers.html">Parsers</a>.<a class="xref" href="SQLParser.Parsers.TSql.html">TSql</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SQLParser.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TSqlParser.Create_server_auditContext : ParserRuleContext, IRuleNode, IParseTree, ISyntaxTree, ITree</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RuleContext</span></div>
+      <div><span class="xref">ParserRuleContext</span></div>
+      <div><span class="xref">TSqlParser.Create_server_auditContext</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IRuleNode</span></div>
+      <div><span class="xref">IParseTree</span></div>
+      <div><span class="xref">ISyntaxTree</span></div>
+      <div><span class="xref">ITree</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">ParserRuleContext.EMPTY</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.children</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.exception</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.CopyFrom(ParserRuleContext)</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.AddChild(ITerminalNode)</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.AddChild(RuleContext)</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.RemoveLastChild()</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.AddChild(IToken)</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.AddErrorNode(IToken)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ParserRuleContext.GetChild(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ParserRuleContext.GetChild&lt;T&gt;(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ParserRuleContext.GetToken(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ParserRuleContext.GetTokens(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ParserRuleContext.GetRuleContext&lt;T&gt;(int)</a>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.GetRuleContexts&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.ToInfoString(Parser)</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.EmptyContext</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.ChildCount</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.SourceInterval</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.Start</span>
+    </div>
+    <div>
+      <span class="xref">ParserRuleContext.Stop</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.invokingState</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">RuleContext.GetChildContext(RuleContext, int)</a>
+    </div>
+    <div>
+      <span class="xref">RuleContext.Depth()</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.GetText()</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.getAltNumber()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">RuleContext.setAltNumber(int)</a>
+    </div>
+    <div>
+      <span class="xref">RuleContext.Accept&lt;T&gt;(IParseTreeVisitor&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.ToStringTree(Parser)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">RuleContext.ToStringTree(IList&lt;string&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">RuleContext.ToStringTree()</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.ToString(IRecognizer)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">RuleContext.ToString(IList&lt;string&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">RuleContext.ToString(IRecognizer, RuleContext)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">RuleContext.ToString(IList&lt;string&gt;, RuleContext)</a>
+    </div>
+    <div>
+      <span class="xref">RuleContext.IsEmpty</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.Parent</span>
+    </div>
+    <div>
+      <span class="xref">RuleContext.Payload</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext__ctor_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.#ctor*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext__ctor_Antlr4_Runtime_ParserRuleContext_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.#ctor(Antlr4.Runtime.ParserRuleContext,System.Int32)">
+  Create_server_auditContext(ParserRuleContext, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31750"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Create_server_auditContext(ParserRuleContext parent, int invokingState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <span class="xref">ParserRuleContext</span></dt>
+    <dd></dd>
+    <dt><code>invokingState</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_audit_guid" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.audit_guid">
+  audit_guid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31627"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Id_Context audit_guid</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Id_Context.html">Id_Context</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_audit_name" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.audit_name">
+  audit_name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31622"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Id_Context audit_name</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Id_Context.html">Id_Context</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_event_field_name" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.event_field_name">
+  event_field_name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31628"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Id_Context event_field_name</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Id_Context.html">Id_Context</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_filepath" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.filepath">
+  filepath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31623"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IToken filepath</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IToken</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_max_files" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.max_files">
+  max_files
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31625"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IToken max_files</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IToken</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_max_rollover_files" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.max_rollover_files">
+  max_rollover_files
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31624"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IToken max_rollover_files</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IToken</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_new_audit_name" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.new_audit_name">
+  new_audit_name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31629"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Id_Context new_audit_name</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Id_Context.html">Id_Context</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_queue_delay" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.queue_delay">
+  queue_delay
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31626"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IToken queue_delay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IToken</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_RuleIndex_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.RuleIndex*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_RuleIndex" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.RuleIndex">
+  RuleIndex
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31754"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int RuleIndex { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_AND_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.AND*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_AND" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.AND">
+  AND()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31684"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode AND()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_APPLICATION_LOG_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.APPLICATION_LOG*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_APPLICATION_LOG" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.APPLICATION_LOG">
+  APPLICATION_LOG()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31658"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode APPLICATION_LOG()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_AUDIT_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.AUDIT*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_AUDIT" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.AUDIT">
+  AUDIT()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31632"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode AUDIT()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_AUDIT_GUID_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.AUDIT_GUID*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_AUDIT_GUID" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.AUDIT_GUID">
+  AUDIT_GUID()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31672"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] AUDIT_GUID()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_AUDIT_GUID_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.AUDIT_GUID*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_AUDIT_GUID_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.AUDIT_GUID(System.Int32)">
+  AUDIT_GUID(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31673"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode AUDIT_GUID(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_COMMA_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.COMMA*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_COMMA" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.COMMA">
+  COMMA()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31708"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] COMMA()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_COMMA_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.COMMA*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_COMMA_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.COMMA(System.Int32)">
+  COMMA(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31709"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode COMMA(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_CONTINUE_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.CONTINUE*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_CONTINUE" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.CONTINUE">
+  CONTINUE()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31686"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] CONTINUE()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_CONTINUE_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.CONTINUE*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_CONTINUE_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.CONTINUE(System.Int32)">
+  CONTINUE(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31687"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode CONTINUE(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_CREATE_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.CREATE*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_CREATE" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.CREATE">
+  CREATE()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31630"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode CREATE()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_DECIMAL_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.DECIMAL*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_DECIMAL" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.DECIMAL">
+  DECIMAL()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31676"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] DECIMAL()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_DECIMAL_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.DECIMAL*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_DECIMAL_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.DECIMAL(System.Int32)">
+  DECIMAL(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31677"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode DECIMAL(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_EQUAL_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.EQUAL*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_EQUAL" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.EQUAL">
+  EQUAL()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31643"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] EQUAL()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_EQUAL_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.EQUAL*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_EQUAL_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.EQUAL(System.Int32)">
+  EQUAL(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31644"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode EQUAL(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_EXCLAMATION_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.EXCLAMATION*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_EXCLAMATION" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.EXCLAMATION">
+  EXCLAMATION()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31713"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode EXCLAMATION()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_EnterRule_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.EnterRule*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_EnterRule_Antlr4_Runtime_Tree_IParseTreeListener_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.EnterRule(Antlr4.Runtime.Tree.IParseTreeListener)">
+  EnterRule(IParseTreeListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31755"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void EnterRule(IParseTreeListener listener)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listener</code> <span class="xref">IParseTreeListener</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_ExitRule_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.ExitRule*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_ExitRule_Antlr4_Runtime_Tree_IParseTreeListener_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.ExitRule(Antlr4.Runtime.Tree.IParseTreeListener)">
+  ExitRule(IParseTreeListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31760"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ExitRule(IParseTreeListener listener)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listener</code> <span class="xref">IParseTreeListener</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_FAIL_OPERATION_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.FAIL_OPERATION*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_FAIL_OPERATION" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.FAIL_OPERATION">
+  FAIL_OPERATION()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31694"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] FAIL_OPERATION()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_FAIL_OPERATION_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.FAIL_OPERATION*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_FAIL_OPERATION_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.FAIL_OPERATION(System.Int32)">
+  FAIL_OPERATION(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31695"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode FAIL_OPERATION(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_FILE_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.FILE*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_FILE" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.FILE">
+  FILE()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31657"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode FILE()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_FILEPATH_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.FILEPATH*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_FILEPATH" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.FILEPATH">
+  FILEPATH()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31714"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] FILEPATH()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_FILEPATH_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.FILEPATH*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_FILEPATH_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.FILEPATH(System.Int32)">
+  FILEPATH(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31715"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode FILEPATH(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_GB_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.GB*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_GB" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.GB">
+  GB()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31742"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] GB()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_GB_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.GB*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_GB_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.GB(System.Int32)">
+  GB(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31743"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode GB(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_GREATER_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.GREATER*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_GREATER" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.GREATER">
+  GREATER()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31706"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode GREATER()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_LESS_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.LESS*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_LESS" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.LESS">
+  LESS()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31707"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode LESS()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_LR_BRACKET_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.LR_BRACKET*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_LR_BRACKET" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.LR_BRACKET">
+  LR_BRACKET()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31649"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] LR_BRACKET()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_LR_BRACKET_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.LR_BRACKET*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_LR_BRACKET_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.LR_BRACKET(System.Int32)">
+  LR_BRACKET(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31650"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode LR_BRACKET(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MAXSIZE_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MAXSIZE*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MAXSIZE" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MAXSIZE">
+  MAXSIZE()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31718"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] MAXSIZE()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MAXSIZE_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MAXSIZE*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MAXSIZE_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MAXSIZE(System.Int32)">
+  MAXSIZE(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31719"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode MAXSIZE(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MAX_FILES_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MAX_FILES*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MAX_FILES" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MAX_FILES">
+  MAX_FILES()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31726"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] MAX_FILES()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MAX_FILES_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MAX_FILES*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MAX_FILES_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MAX_FILES(System.Int32)">
+  MAX_FILES(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31727"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode MAX_FILES(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MAX_ROLLOVER_FILES_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MAX_ROLLOVER_FILES*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MAX_ROLLOVER_FILES" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MAX_ROLLOVER_FILES">
+  MAX_ROLLOVER_FILES()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31722"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] MAX_ROLLOVER_FILES()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MAX_ROLLOVER_FILES_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MAX_ROLLOVER_FILES*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MAX_ROLLOVER_FILES_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MAX_ROLLOVER_FILES(System.Int32)">
+  MAX_ROLLOVER_FILES(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31723"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode MAX_ROLLOVER_FILES(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MB_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MB*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MB" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MB">
+  MB()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31738"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] MB()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MB_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MB*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MB_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MB(System.Int32)">
+  MB(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31739"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode MB(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MODIFY_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MODIFY*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_MODIFY" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.MODIFY">
+  MODIFY()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31641"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode MODIFY()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_NAME_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.NAME*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_NAME" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.NAME">
+  NAME()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31642"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode NAME()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_NOT_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.NOT*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_NOT" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.NOT">
+  NOT()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31712"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode NOT()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_OFF_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.OFF*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_OFF" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.OFF">
+  OFF()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31702"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] OFF()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_OFF_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.OFF*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_OFF_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.OFF(System.Int32)">
+  OFF(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31703"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode OFF(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_ON_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.ON*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_ON" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.ON">
+  ON()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31698"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] ON()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_ON_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.ON*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_ON_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.ON(System.Int32)">
+  ON(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31699"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode ON(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_ON_FAILURE_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.ON_FAILURE*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_ON_FAILURE" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.ON_FAILURE">
+  ON_FAILURE()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31664"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] ON_FAILURE()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_ON_FAILURE_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.ON_FAILURE*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_ON_FAILURE_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.ON_FAILURE(System.Int32)">
+  ON_FAILURE(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31665"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode ON_FAILURE(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_OR_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.OR*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_OR" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.OR">
+  OR()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31685"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode OR()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_QUEUE_DELAY_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.QUEUE_DELAY*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_QUEUE_DELAY" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.QUEUE_DELAY">
+  QUEUE_DELAY()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31660"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] QUEUE_DELAY()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_QUEUE_DELAY_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.QUEUE_DELAY*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_QUEUE_DELAY_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.QUEUE_DELAY(System.Int32)">
+  QUEUE_DELAY(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31661"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode QUEUE_DELAY(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_REMOVE_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.REMOVE*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_REMOVE" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.REMOVE">
+  REMOVE()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31639"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode REMOVE()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_RESERVE_DISK_SPACE_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.RESERVE_DISK_SPACE*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_RESERVE_DISK_SPACE" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.RESERVE_DISK_SPACE">
+  RESERVE_DISK_SPACE()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31730"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] RESERVE_DISK_SPACE()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_RESERVE_DISK_SPACE_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.RESERVE_DISK_SPACE*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_RESERVE_DISK_SPACE_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.RESERVE_DISK_SPACE(System.Int32)">
+  RESERVE_DISK_SPACE(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31731"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode RESERVE_DISK_SPACE(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_RR_BRACKET_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.RR_BRACKET*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_RR_BRACKET" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.RR_BRACKET">
+  RR_BRACKET()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31653"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] RR_BRACKET()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_RR_BRACKET_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.RR_BRACKET*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_RR_BRACKET_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.RR_BRACKET(System.Int32)">
+  RR_BRACKET(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31654"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode RR_BRACKET(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_SECURITY_LOG_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.SECURITY_LOG*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_SECURITY_LOG" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.SECURITY_LOG">
+  SECURITY_LOG()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31659"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode SECURITY_LOG()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_SERVER_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.SERVER*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_SERVER" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.SERVER">
+  SERVER()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31631"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode SERVER()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_SHUTDOWN_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.SHUTDOWN*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_SHUTDOWN" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.SHUTDOWN">
+  SHUTDOWN()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31690"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] SHUTDOWN()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_SHUTDOWN_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.SHUTDOWN*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_SHUTDOWN_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.SHUTDOWN(System.Int32)">
+  SHUTDOWN(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31691"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode SHUTDOWN(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_STATE_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.STATE*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_STATE" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.STATE">
+  STATE()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31668"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] STATE()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_STATE_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.STATE*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_STATE_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.STATE(System.Int32)">
+  STATE(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31669"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode STATE(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_STRING_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.STRING*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_STRING" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.STRING">
+  STRING()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31680"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] STRING()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_STRING_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.STRING*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_STRING_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.STRING(System.Int32)">
+  STRING(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31681"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode STRING(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_TB_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.TB*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_TB" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.TB">
+  TB()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31746"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] TB()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_TB_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.TB*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_TB_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.TB(System.Int32)">
+  TB(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31747"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode TB(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_TO_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.TO*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_TO" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.TO">
+  TO()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31647"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode TO()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_UNLIMITED_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.UNLIMITED*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_UNLIMITED" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.UNLIMITED">
+  UNLIMITED()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31734"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode[] UNLIMITED()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_UNLIMITED_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.UNLIMITED*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_UNLIMITED_System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.UNLIMITED(System.Int32)">
+  UNLIMITED(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31735"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode UNLIMITED(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_WHERE_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.WHERE*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_WHERE" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.WHERE">
+  WHERE()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31640"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode WHERE()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_WITH_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.WITH*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_WITH" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.WITH">
+  WITH()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31648"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITerminalNode WITH()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITerminalNode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_id__" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.id_*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_id_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.id_">
+  id_()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31633"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Id_Context[] id_()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Id_Context.html">Id_Context</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_id__" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.id_*"></a>
+
+  <h3 id="SQLParser_Parsers_TSql_TSqlParser_Create_server_auditContext_id__System_Int32_" data-uid="SQLParser.Parsers.TSql.TSqlParser.Create_server_auditContext.id_(System.Int32)">
+  id_(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31636"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSqlParser.Id_Context id_(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.html">TSqlParser</a>.<a class="xref" href="SQLParser.Parsers.TSql.TSqlParser.Id_Context.html">Id_Context</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/AlexanderSemenyak/SQLParser/blob/master/SQLParser/Parsers/TSql/TSqlParser.cs/#L31621" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <strong><a href='https://github.com/JaCraig/SQLParser'>Open in Github</a></strong>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
